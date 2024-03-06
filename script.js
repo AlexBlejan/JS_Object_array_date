@@ -21,3 +21,8 @@ console.log(`Products after changing first item:`, myProducts);
 
 myProducts.pop();
 console.log(`Products after deleting last item:`, myProducts);
+
+// adaugarea unui element in fata listei din array
+
+myProducts.unshift(`camasa`);
+console.log(`Products after adding inthe top of the list:`, myProducts);
