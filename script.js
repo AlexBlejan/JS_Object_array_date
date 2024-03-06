@@ -39,3 +39,13 @@ console.log(
 
 const subsetOfMyProducts = myProducts.slice(1, 3);
 console.log(`Subset from 1 to 3 is:`, subsetOfMyProducts);
+
+// splice(2, 1)- de la index 2 scoatem 1 element
+
+myProducts.splice(2, 1);
+console.log(`After splice(2, 1):`, myProducts);
+
+// splice(1, 1, `camasa`) - de la index 1, scoatem 1 element si adaugam `camasa`
+
+myProducts.splice(1, 1, `camasa`);
+console.log(`After splice(1, 1, "camasa"):`, myProducts);
