@@ -34,3 +34,8 @@ console.log(
 	`Products after deleting the first element in the list:`,
 	myProducts
 );
+
+// slice - returneaza elementele de la un anmumit index fara a modifica arrayul original
+
+const subsetOfMyProducts = myProducts.slice(1, 3);
+console.log(`Subset from 1 to 3 is:`, subsetOfMyProducts);
