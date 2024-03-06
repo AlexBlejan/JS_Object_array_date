@@ -16,3 +16,8 @@ console.log(`Products after push:`, myProducts);
 
 myProducts[0] = `tricou`;
 console.log(`Products after changing first item:`, myProducts);
+
+// stergerea ultimului element din array
+
+myProducts.pop();
+console.log(`Products after deleting last item:`, myProducts);
