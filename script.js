@@ -26,3 +26,11 @@ console.log(`Products after deleting last item:`, myProducts);
 
 myProducts.unshift(`camasa`);
 console.log(`Products after adding inthe top of the list:`, myProducts);
+
+// stergerea primului element din array
+
+myProducts.shift();
+console.log(
+	`Products after deleting the first element in the list:`,
+	myProducts
+);
