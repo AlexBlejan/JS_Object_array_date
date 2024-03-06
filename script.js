@@ -11,3 +11,8 @@ console.log(`Length of myProducts array is ${myProducts.length}`);
 const newItem = `pantofi`;
 myProducts.push(newItem);
 console.log(`Products after push:`, myProducts);
+
+// modificarea unui element
+
+myProducts[0] = `tricou`;
+console.log(`Products after changing first item:`, myProducts);
