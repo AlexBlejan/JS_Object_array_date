@@ -49,3 +49,51 @@ console.log(`After splice(2, 1):`, myProducts);
 
 myProducts.splice(1, 1, `camasa`);
 console.log(`After splice(1, 1, "camasa"):`, myProducts);
+
+// Obiecte
+let person = {
+	name: "John",
+	surname: "Doe",
+	address: {
+		street: "Cetatii",
+		number: 21,
+		appartment: "b1",
+		block: "7b",
+		tronson: 1,
+		zipCode: "100203",
+		city: "Cluj-Napoca",
+		country: "Romania",
+		county: "Cluj",
+	},
+	age: 34,
+};
+
+console.log(person);
+
+console.log(`nume persoana:  ${person.name}`);
+
+console.log(`cod postal: ${person.address.zipCode}`);
+
+// brackets notation
+console.log(`person surname: ${person["surname"]}`);
+
+// modificare valori din obiect
+person.name = "Ion";
+console.log(`name:${person.name}`);
+
+person.surname = "Ionel";
+console.log(`surname:`, person.surname);
+
+// comparare obiecte
+
+const obj1 = { a: 10, b: true };
+const obj2 = { a: 10, b: true };
+const obj3 = obj1;
+
+console.log(`obj1 === obj2 => ${obj1 === obj2}`); //false
+console.log(`obj1 === obj3 => ${obj1 === obj3}`); //true
+
+// comparare dupa propritati
+
+const areEqual = obj1.a === obj2.a && obj2.b === obj3.b;
+console.log(`areEqual`, areEqual);
