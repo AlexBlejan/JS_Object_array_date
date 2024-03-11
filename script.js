@@ -97,3 +97,27 @@ console.log(`obj1 === obj3 => ${obj1 === obj3}`); //true
 
 const areEqual = obj1.a === obj2.a && obj2.b === obj3.b;
 console.log(`areEqual`, areEqual);
+
+// stergerea unei proprietati din obiec
+
+delete person.age;
+console.log(`person:`, person.age);
+
+// Obiectul Date
+
+const date = new Date();
+console.log(`date:`, date);
+
+// accesare an
+
+console.log(`an:`, date.getFullYear());
+
+// accesare luna
+
+const months = ["Ianuarie", "Februarie", "martie"];
+const currentMonthIndex = date.getMonth();
+console.log(`luna:`, months[currentMonthIndex]);
+
+// accesare zi
+
+console.log(`day of the month:`, date.getDate());
